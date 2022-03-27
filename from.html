@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML lanjutkan</title>
+    <style>
+          label{
+              display: inline block;
+              width:100px ;
+          }  
+          #nama, textarea{
+              border: 1px solid black;
+          }
+          #submit{
+              border:1px solid black ; 
+              background-color: bisque;
+              color: black;
+              font-weight: bold;
+              padding: 5px 15px;
+          }
+        
+    </style>
+</head>
+<body>
+    <header><h1>membuat from</h1></header>
+    <form>
+        <fieldset>
+            <legend>data pelanggan</legend>
+        
+        <h5>
+        <label for="nama">nama</label>
+        <input type="text"id="nama">
+        </h5>
+        <!--Alamat-->
+        <h5>
+        <label>alamat</label>
+            <textarea name="alamat" id="" cols="20" rows="5"></textarea>
+            <!--jenis kelamin-->
+        </h5>
+        <h5>
+            <label>jenis kelamin</label>
+            <input id="jk_L"type="radio"name="kelamin"value="L">Laki Laki
+            <input id="jk_p" type="radio" name="kelamin"value="p">perempuan
+        </h5>
+            <P>
+                <input type="submit" name="submit" value="login">
+            </P></fieldset>
+    </form>
+</body>
+</html>
